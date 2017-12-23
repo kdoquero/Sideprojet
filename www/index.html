@@ -10,14 +10,12 @@
 <body>
     <main class="container-row" id="main">
         <div class="left">
-            <header>
-                <div class="container-row title">
-                    <a href="#"><h1><img src="images/logo.png" alt=""></h1></a>
-                    <div>
+            <header class="container-column">
+                <nav class="container-row">
+                    <div class="container-column">
+                        <a href="#"><img src="images/logo.png" alt=""></a>
                         <h2>The best wallpaper on the Net!</h2>
                     </div>
-                </div>
-                <nav>
                     <ul class="container-row">
                         <li>
                             <a href="#">Latest</a>
@@ -35,23 +33,50 @@
                             <a href="#">Forums</a>
                         </li>
                     </ul>
-                    <form action="#">
-                        <input type="text" placeholder="Search...">
-                    </form>
                 </nav>
-
+                <form action="#">
+                    <input type="text" placeholder="Search...">
+                </form>
             </header>
             <section>
                 <div id="featured">
-
+                    <div class=" contenu-image container-column">
+                        <ul class=" container-row row-of-4">
+                            <li><a href="#"><img src="images/th-196149.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="images/th-599106.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="images/th-601528.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="images/th-599429.jpg" alt=""></a></li>
+                        </ul>
+                        <ul class="container-row row-of-7">
+                            <li><a href="#"><img src="images/th-596580.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="images/th-597187.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="images/th-575741.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="images/th-22805.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="images/th-594464.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="images/th-592298.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="images/th-560816.jpg" alt=""></a></li>
+                        </ul>
+                        <ul class="container-row row-of-3">
+                            <li><a href="#"><img src="images/th-589212.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="images/th-587608.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="images/th-586266.jpg" alt=""></a></li>
+                        </ul>
+                        <ul class="container-row row-of-5">
+                            <li><a href="#"><img src="images/th-512732.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="images/th-572197.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="images/th-569825.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="images/th-496142.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="images/th-569825 (1).jpg" alt=""></a></li>
+                        </ul>
+                    </div>
                 </div>
             </section>
         </div>
-        <div class="container-column right">
+        <section class="container-column right">
             <div>
                 <b>Alpha Notice:</b><p>Please note, that we are planning on a partial reset/cleanup at the end of the alpha phase</p>
             </div>
-            <div>
+            <article>
                 <h2>Recent Announcements</h2>
                 <ul>
                     <li>
@@ -67,27 +92,40 @@
                         <a href="#">Joinning the developer team</a>
                     </li>
                 </ul>
-            </div>
+            </article>
             <div class="container-row">
-                <form action="#" method="post">
+                <form class="container-column" action="#" method="post">
                     <label for="#">Login</label>
-                    <div>
+                    <div class="container-row">
                         <input type="email" name="" id="" placeholder="@">
-                        <input type="password" name="" id="" placeholder="*****">
+                        <input type="password" name="" id="" placeholder="*****">    
                     </div>
+                    <a class="button-login" href="#"><h3>Login</h3></a> 
                 </form>
 
             </div>
             <div>
                 <form class="container-column" action="#" method="post">
                     <label for="">Register</label>
-                    <input type="text"  placeholder="Username">
-                    <input type="email" name="" id="">
-                    <input type="password" name="" id="" placeholder="password">
-                    <input type="password" name="" id="" placeholder="Repeat password">
+                        <div class="container-row">
+                            <input type="text"  placeholder="Username">
+                            <input type="email" name="" id="" placeholder="Email">
+                        </div>
+                        <div class="container-row">
+                            <input type="password" name="" id="" placeholder="password">
+                            <input type="password" name="" id="" placeholder="Repeat password">
+                        </div>
+                        <div class="container-row">
+                            <input type="checkbox" name="" id="">
+                            <input type="checkbox" name="" id="" placeholder="Prove your humanity">
+                        </div>
+                        <div class="container-column">
+                            <p>By registering you agree to the <a href="#">Privacy Policy</a>and <a href="#">Terms of Service</a></p>
+                            <a class="button-register" href="#"><H3>Register</H3></a>
+                        </div>
                 </form>
             </div>
-        </div>
+        </section>
     </main>
 </body>
 </html>
